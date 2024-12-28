@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { FiMenu } from "react-icons/fi";
-import { RxCross2 } from "react-icons/rx";
+import { IoMenu } from "react-icons/io5";
 
+import { RxCross2 } from "react-icons/rx";
 import { FaCaretDown } from "react-icons/fa6";
 import { HiSpeakerphone } from "react-icons/hi";
 import navlogo from '../assets/navlogo.png'
@@ -83,7 +83,7 @@ const Header = () => {
                         className="text-white duration-300"
                         onClick={toggleMenu}
                     >
-                        {isMenuOpen ? <RxCross2 className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
+                        {isMenuOpen ? <RxCross2 className="w-6 h-6" /> : <IoMenu className="w-6 h-6" />}
                     </button>
                 </div>
 
