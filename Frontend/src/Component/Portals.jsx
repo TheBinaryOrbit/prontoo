@@ -1,14 +1,26 @@
-import React from 'react'
-import app from '../assets/app.jpg'
-import admin from '../assets/admin.png'
-import vendor from '../assets/vendor.png'
+import React, { useEffect } from 'react';
+import app from '../assets/app.jpg';
+import admin from '../assets/admin.png';
+import vendor from '../assets/vendor.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Portals = () => {
+    // Initialize AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,  // Duration of the animation (in ms)
+            easing: 'ease-in-out',  // Easing function for the animation
+            once: true,  // Whether the animation should happen only once
+        });
+    }, []);
+
     return (
         <div className="p-6 mt-10">
             {/* Customer Application Section */}
-            <section className="bg-white p-6  max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:px-20 mb-5 md:mb-20">
+            <section className="bg-white p-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:px-20 mb-5 md:mb-20" data-aos="fade-up">
                 <div className='md:w-1/2'>
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800  font-playfair italic  text-center md:text-left mb-6">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 font-playfair italic text-center md:text-left mb-6">
                         Our <span className="text-logocolor">Customer Application</span>
                     </h2>
                     <div className="flex flex-col md:flex-row items-center">
@@ -33,19 +45,20 @@ const Portals = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-1/2  flex justify-center items-center'>
+                <div className='md:w-1/2 flex justify-center items-center'>
                     <img
                         src={app}
                         alt="Customer App"
-                        className="h-auto mt-6 md:mt-0 md:ml-6  ml-5 scale-90 hover:scale-100 duration-700"
+                        className="h-auto mt-6 md:mt-0 md:ml-6 ml-5 scale-90 hover:scale-100 duration-700"
+                        data-aos="fade-left"
                     />
                 </div>
             </section>
 
             {/* Admin Portal Section */}
-            <section className="bg-white p-6  max-w-7xl mx-auto flex flex-col md:flex-row-reverse justify-between md:px-20 gap-10 mb-5 md:mb-20">
+            <section className="bg-white p-6 max-w-7xl mx-auto flex flex-col md:flex-row-reverse justify-between md:px-20 gap-10 mb-5 md:mb-20" data-aos="fade-up">
                 <div className='md:w-1/2'>
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800  font-playfair italic mb-6 text-center md:text-left">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 font-playfair italic mb-6 text-center md:text-left">
                         Our <span className="text-logocolor">Admin Portal</span>
                     </h2>
                     <div className="flex flex-col md:flex-row items-center">
@@ -70,19 +83,20 @@ const Portals = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-1/2  flex justify-center items-center'>
+                <div className='md:w-1/2 flex justify-center items-center'>
                     <img
                         src={admin}
-                        alt="Customer App"
-                        className="h-auto mt-6 md:mt-0 md:ml-6  ml-5 scale-90 hover:scale-100 duration-700"
+                        alt="Admin App"
+                        className="h-auto mt-6 md:mt-0 md:ml-6 ml-5 scale-90 hover:scale-100 duration-700"
+                        data-aos="fade-right"
                     />
                 </div>
             </section>
 
             {/* Vendor Portal Section */}
-            <section className="bg-white p-6 mb-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:px-20">
+            <section className="bg-white p-6 mb-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:px-20" data-aos="fade-up">
                 <div className='md:w-1/2'>
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800  font-playfair italic text-center md:text-left mb-6">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 font-playfair italic text-center md:text-left mb-6">
                         Our <span className="text-logocolor">Vendor Portal</span>
                     </h2>
                     <div className="flex flex-col md:flex-row items-center">
@@ -107,15 +121,17 @@ const Portals = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-1/2  flex justify-center items-center'>
+                <div className='md:w-1/2 flex justify-center items-center'>
                     <img
                         src={vendor}
-                        alt="Customer App"
-                        className="h-auto mt-6 md:mt-0 md:ml-6  ml-5 scale-90 hover:scale-100 duration-700"
+                        alt="Vendor App"
+                        className="h-auto mt-6 md:mt-0 md:ml-6 ml-5 scale-90 hover:scale-100 duration-700"
+                        data-aos="fade-left"
                     />
                 </div>
             </section>
         </div>
-    )
-}
-export default Portals
+    );
+};
+
+export default Portals;

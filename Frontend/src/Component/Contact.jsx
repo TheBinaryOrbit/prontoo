@@ -1,16 +1,29 @@
-import React from "react";
-import img from '../assets/contact.png'
+import React, { useEffect } from "react";
+import img from '../assets/contact.png';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,  // Duration of the animation (in ms)
+      easing: 'ease-in-out',  // Easing function for the animation
+      once: true,  // Whether the animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between p-6 lg:p-16 max-w-7xl mx-auto">
       {/* Left Section: Form */}
-      <div className="w-full lg:w-1/2">
-        <h3 className="text-4xl font-bold mb-2 font-playfair italic md:text-left text-center">Book a free Demo</h3>
+      <div className="w-full lg:w-1/2" data-aos="fade-right">
+        <h3 className="text-4xl font-bold mb-2 font-playfair italic md:text-left text-center">
+          Book a free Demo
+        </h3>
         <p className="text-gray-600 mb-6 md:text-left text-center">
           Get in touch with our team to clarify your queries
         </p>
-        <form className="space-y-4">
+        <form className="space-y-4" aria-labelledby="contact-form">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
               Name <span className="text-red-500">*</span>
@@ -80,7 +93,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="w-full py-3 bg-logocolor text-white   rounded-xl hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 font-bold"
+            className="w-full py-3 bg-logocolor text-white rounded-xl hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 font-bold"
           >
             Submit
           </button>
@@ -88,7 +101,7 @@ const Contact = () => {
       </div>
 
       {/* Right Section: Illustration */}
-      <div className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
+      <div className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center" data-aos="fade-left">
         <img
           src={img}
           alt="Illustration"

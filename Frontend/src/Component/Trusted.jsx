@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const Trusted = () => {
-    const trustedItems = [
-        { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-        { id: 2, label: 'Starbucks', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-        { id: 3, label: 'Subway', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-        { id: 4, label: 'Pizza Hut', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-        { id: 5, label: 'Burger King', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-        { id: 6, label: 'KFC', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-        { id: 7, label: 'Domino\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-        { id: 8, label: 'Taco Bell', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
-      ];
-      
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Duration of the animation (in ms)
+      easing: 'ease-in-out',  // Easing function for the animation
+      once: true,  // Whether the animation should happen only once
+    });
+  }, []);
+
+  const trustedItems = [
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+    { id: 1, label: 'McDonald\'s', icon: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-logo.png' },
+  ];
+
   return (
     <section className="py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -28,11 +38,13 @@ const Trusted = () => {
             <div
               key={item.id}
               className="flex flex-col items-center gap-4 transition-transform hover:scale-105"
+              data-aos="fade-up" // Add AOS animation here
+              data-aos-duration="1000" // Optional: Set animation duration
             >
               <a href="#" className="flex justify-center items-center">
                 <img
                   src={item.icon}
-                  alt={item.label}
+                  alt={item.label}  // Alt text for accessibility
                   className="h-28 w-28 object-contain"
                 />
               </a>

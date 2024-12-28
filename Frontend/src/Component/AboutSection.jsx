@@ -1,8 +1,17 @@
-import React from "react";
-import img1 from "../assets/who.png";
-import img2 from "../assets/key.png";
+import React, { useEffect } from 'react';
+import img1 from '../assets/who.png';
+import img2 from '../assets/key.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutSection = () => {
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,  // Duration of the animation (in ms)
+    easing: 'ease-in-out',  // Easing function for the animation
+    once: true,  // Whether the animation should happen only once
+  });
+
   return (
     <div className="relative p-6 md:p-12 max-w-7xl mx-auto">
       {/* Decorative Background Elements */}
@@ -11,7 +20,7 @@ const AboutSection = () => {
       </div>
 
       {/* Who We Are Section */}
-      <div className="relative flex flex-col md:flex-row items-center gap-6 md:gap-12">
+      <div className="relative flex flex-col md:flex-row items-center gap-6 md:gap-12" data-aos="fade-up">
         <div className="flex-1">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 font-playfair italic text-center md:text-left text-gray-800">
             Who We Are <span className="font-serif">?</span>
@@ -34,13 +43,14 @@ const AboutSection = () => {
             src={img1}
             alt="Who We Are Illustration"
             className="max-w-full scale-90"
+            data-aos="fade-left"
           />
         </div>
       </div>
 
       {/* Key Features Section */}
       <div className="relative mt-16">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
           {/* Left Section: Features List */}
           <div className="flex-1">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 font-playfair italic text-center md:text-left text-gray-800">
@@ -74,7 +84,7 @@ const AboutSection = () => {
                     "Need assistance? Our customer support team is available anytime to help with your questions or issues.",
                 },
               ].map((feature, index) => (
-                <li key={index} className="flex items-start gap-3">
+                <li key={index} className="flex items-start gap-3" data-aos="fade-up">
                   <span className="flex items-center justify-center w-6 h-6 rounded-full bg-red-500 text-white font-bold">
                     •
                   </span>
@@ -97,6 +107,7 @@ const AboutSection = () => {
               src={img2}
               alt="Features Illustration"
               className="max-w-full scale-90"
+              data-aos="fade-right"
             />
           </div>
         </div>

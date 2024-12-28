@@ -1,23 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../assets/image4.png";
 import image from "../assets/butcherknife.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Feature = () => {
-  return (
-    <div className="max-w-7xl mx-auto p-4 sm:p-8 h-fit mt-20 mb-24"  >
-      <div className="relative flex flex-col md:flex-row items-center md:items-start justify-between  md:h-[40vh]  sm:px-6 md:px-10  overflow-visible rounded-3xl">
-      <div className=" absolute w-full h-full bg-logocolor top-0 left-0 clip-path-curve rounded-3xl overflow-hidden shadow-2xl">
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Duration of the animation (in ms)
+      easing: "ease-in-out", // Easing function for the animation
+      once: true, // Whether the animation happens only once
+    });
+  }, []);
 
-      </div>
+  return (
+    <div className="max-w-7xl mx-auto p-4 sm:p-8 h-fit mt-20 mb-24">
+      <div
+        className="relative flex flex-col md:flex-row items-center md:items-start justify-between md:h-[40vh] sm:px-6 md:px-10 overflow-visible rounded-3xl"
+        data-aos="fade-up" // Animation on scroll
+      >
+        <div className="absolute w-full h-full bg-logocolor top-0 left-0 clip-path-curve rounded-3xl overflow-hidden shadow-2xl"></div>
+
         {/* Pizza Image Overflowing */}
         <img
           src={image}
           alt="Pizza"
-          className="absolute -top-[100px] right-4 sm:-right-[10px] bg-white w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-cover rounded-full scale-125  duration-300 hover:rotate-360"
+          className="absolute -top-[100px] right-4 sm:-right-[10px] bg-white w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-cover rounded-full scale-125 duration-300 hover:rotate-360"
+          data-aos="zoom-in" // Animation on scroll
         />
 
         {/* Mobile App Preview */}
-        <div className="relative rounded-3xl">
+        <div className="relative rounded-3xl" data-aos="fade-left">
           <img
             src={img}
             alt="App Preview"
@@ -26,12 +40,16 @@ const Feature = () => {
         </div>
 
         {/* Download Section */}
-        <div className="flex-1 flex flex-col justify-center items-start  p-4 md:ml-10 z-50">
+        <div
+          className="flex-1 flex flex-col justify-center items-start p-4 md:ml-10 z-50"
+          data-aos="fade-right"
+        >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair tracking-[2px] font-bold text-white text-left mb-5 mt-0 md:mt-8">
             Download <br /> our Mobile App
           </h2>
           <div className="mt-3 flex -space-x-2">
-            {["https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+            {[
+              "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
               "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
               "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80",
               "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
@@ -42,13 +60,17 @@ const Feature = () => {
                 className="inline-block h-10 w-10 sm:h-12 sm:w-12 rounded-full ring-2 ring-white hover:scale-110 cursor-pointer duration-300"
                 src={src}
                 alt={`User ${index + 1}`}
+                data-aos="zoom-in" // Animation on scroll
               />
             ))}
           </div>
         </div>
 
         {/* Play Store and App Store Buttons */}
-        <div className="flex flex-row justify-center items-center md:items-end gap-4 h-full mt-8 md:mt-0 z-40">
+        <div
+          className="flex flex-row justify-center items-center md:items-end gap-4 h-full mt-8 md:mt-0 z-40"
+          data-aos="fade-up"
+        >
           {[
             {
               label: "Play Store",
@@ -64,7 +86,7 @@ const Feature = () => {
             <a
               key={index}
               href="#"
-              className="flex flex-col justify-center items-center space-x-2 bg-white px-6 py-4 rounded-t-full  transition duration-300"
+              className="flex flex-col justify-center items-center space-x-2 bg-white px-6 py-4 rounded-t-full transition duration-300"
             >
               <img
                 src={store.img}
