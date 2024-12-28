@@ -20,7 +20,7 @@ function WhyProntoo() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col justify-center items-center gap-x-16 gap-y-8 lg:flex-row lg:justify-between mx-auto max-w-full">
                     <div className="w-full lg:w-7/12 flex  gap-5 justify-center lg:justify-start p-4  relative">
-                    <img src={Barbecue} alt="" className='  absolute -bottom-[10px] -left-[40px] w-24  -rotate-12 lg:flex hidden'/>
+                        <img src={Barbecue} alt="" className='  absolute -bottom-[10px] -left-[40px] w-24  -rotate-12 lg:flex hidden' />
                         <img
                             src={whyus1}
                             alt="Why Us"
@@ -45,17 +45,23 @@ function WhyProntoo() {
                                     <div
                                         id="basic-collapse-one"
                                         className="accordion-content w-full px-0 overflow-hidden pr-4 active"
-                                        style={{ maxHeight: '100px' }}
+
                                         aria-labelledby="basic-heading-one"
                                     >
-                                        <h1 className="font-roboto font-bold text-xl">
-                                            ▸ Convenient Payment Options:
-                                        </h1>
-                                        <p className="text-base font-normal text-gray-600 ml-5">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-                                            sunt? Alias animi soluta voluptas hic saepe quaerat cupiditate
-                                            quibusdam vero!
-                                        </p>
+                                        <li className="flex items-start gap-3">
+                                            <span className="flex items-center justify-center w-6 h-6 rounded-full bg-red-500 text-white font-bold">
+                                                •
+                                            </span>
+                                            <div>
+                                                <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-800">
+                                                    Convenient Payment Options:
+                                                </p>
+                                                <p className="text-sm sm:text-base lg:text-lg text-gray-600">
+                                                    Prontoo connects you with the food vendors within your university,
+                                                    office, or organization, providing a customized dining experience.
+                                                </p>
+                                            </div>
+                                        </li>
                                     </div>
                                 </div>
                                 {/** Accordion Item 2 */}
@@ -63,16 +69,22 @@ function WhyProntoo() {
                                     <div
                                         id="basic-collapse-two"
                                         className="accordion-content w-full px-0 overflow-hidden pr-4 active"
-                                        style={{ maxHeight: '100px' }}
                                         aria-labelledby="basic-heading-two"
                                     >
-                                        <h1 className="font-roboto font-bold text-xl">
-                                            ▸ Tailored for Your Organization:
-                                        </h1>
-                                        <p className="text-base font-normal text-gray-600 ml-5">
-                                            Prontoo connects you with the food vendors within your university,
-                                            office, or organization, providing a customized dining experience.
-                                        </p>
+                                        <li className="flex items-start gap-3">
+                                            <span className="flex items-center justify-center w-6 h-6 rounded-full bg-red-500 text-white font-bold">
+                                                •
+                                            </span>
+                                            <div>
+                                                <p className="text-sm sm:text-base lg:text-lg font-bold text-gray-800">
+                                                    Tailored for Your Organization:
+                                                </p>
+                                                <p className="text-sm sm:text-base lg:text-lg text-gray-600">
+                                                    Prontoo connects you with the food vendors within your university,
+                                                    office, or organization, providing a customized dining experience.
+                                                </p>
+                                            </div>
+                                        </li>
                                     </div>
                                 </div>
                             </div>
