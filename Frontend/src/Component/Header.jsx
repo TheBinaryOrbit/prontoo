@@ -34,12 +34,12 @@ const Header = () => {
     const scaleX = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
     return (
-        <header className={`w-full index-60 sticky bg-white top-0 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
+        <header className={`w-full index-60 sticky bg-white top-0 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}>
             {
                 !isScrolled ? (
                     <div className="absolute inset-0">
                         <div className="bg-gradient-to-r from-blue-50 via-white to-pink-50 w-full h-full opacity-75"></div>
-                        <div className="absolute top-10 left-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl opacity-50"></div>
+                        <div className="absolute top-10 left-10  bg-blue-200 rounded-full blur-3xl opacity-50"></div>
                         <div className="absolute bottom-10 right-10 w-60 h-60 bg-pink-200 rounded-full blur-3xl opacity-50"></div>
                     </div>
                 )
@@ -47,13 +47,13 @@ const Header = () => {
                     ""
             }
             {/* Scroll Progress Bar */}
-            <div className="flex justify-between items-center px-6 py-5 max-w-full md:max-w-7xl mx-auto rounded-b-3xl">
+            <div className="flex justify-between items-center px-2 py-2 max-w-full md:max-w-7xl mx-auto rounded-b-3xl">
                 {/* Logo */}
                 <img src={navlogo} alt="Logo" className="w-36 index-60" />
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6">
-                    <div className="group relative">
+                    <div className="group relative index-60">
                         <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium">
                             Point of Sale <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
                         </button>
@@ -67,7 +67,7 @@ const Header = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="group relative">
+                    <div className="group relative index-60">
                         <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium index-60" >
                             Add-Ons <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
                         </button>
@@ -81,7 +81,7 @@ const Header = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="group relative">
+                    <div className="group relative index-60">
                         <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium">
                             Outlet Types <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
                         </button>
@@ -108,7 +108,7 @@ const Header = () => {
                 </div>
 
                 {/* Mobile Menu Icon */}
-                <div className="md:hidden">
+                <div className="md:hidden index-60">
                     <button className="text-gray-800 duration-300" onClick={toggleMenu}>
                         {isMenuOpen ? <RxCross2 className="w-6 h-6" /> : <IoMenu className="w-6 h-6" />}
                     </button>
