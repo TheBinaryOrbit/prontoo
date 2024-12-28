@@ -12,14 +12,14 @@ const Hero = () => {
                     <button className="px-6 py-3  shadow-play rounded-2xl  duration-300 font-bold text-white bg-logocolor  hover:scale-105">
                         Take A Free Demo
                     </button>
-                    <button className='bg-white rounded-full p-6 sm:p-7  shadow-play relative z-10'>
+                    {/* <button className='bg-white rounded-full p-6 sm:p-7  shadow-play relative z-10'>
                         <div className=' absolute top-0 left-0 h-full w-full bg-logocolor animate-ping  rounded-full z-0' >
                             <p className=' opacity-0'>0</p>
                         </div>
                         <div className='absolute top-0 left-0 h-full w-full bg-white  flex justify-center items-center rounded-full'>
                             <FaPlay className='text-red-600' />
                         </div>
-                    </button>
+                    </button> */}
                 </div>
             </div>
             <div className='w-full md:w-[50%]  md:h-full h-fit flex justify-center items-center '>

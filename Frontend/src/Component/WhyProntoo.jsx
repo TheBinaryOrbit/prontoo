@@ -9,8 +9,8 @@ function WhyProntoo() {
     return (
         <section className="py-10">
             <div class="mb-14 text-center flex justify-center flex-col items-center">
-                <img src={img} alt="" className='' />
-                <h2 class="text-5xl text-center font-bold text-gray-900 py-5 italic font-playfair">
+                <img src={img} alt="" className='w-20 sm:w-28 lg:w-36' />
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl text-center font-bold text-gray-900 py-5 italic font-playfair">
                     Why <span className='text-logocolor'>Prontoo</span>
                 </h2>
                 <p class="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto px-5">

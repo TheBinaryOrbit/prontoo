@@ -4,11 +4,11 @@ import admin from '../assets/admin.png'
 import vendor from '../assets/vendor.png'
 const Portals = () => {
     return (
-        <div className="p-6 mt-20">
+        <div className="p-6 mt-10">
             {/* Customer Application Section */}
             <section className="bg-white p-6  max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:px-20 mb-5 md:mb-20">
                 <div className='md:w-1/2'>
-                    <h2 className="text-4xl font-extrabold text-gray-800  font-playfair italic  text-center md:text-left mb-6">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800  font-playfair italic  text-center md:text-left mb-6">
                         Our <span className="text-logocolor">Customer Application</span>
                     </h2>
                     <div className="flex flex-col md:flex-row items-center">
@@ -45,7 +45,7 @@ const Portals = () => {
             {/* Admin Portal Section */}
             <section className="bg-white p-6  max-w-7xl mx-auto flex flex-col md:flex-row-reverse justify-between md:px-20 gap-10 mb-5 md:mb-20">
                 <div className='md:w-1/2'>
-                    <h2 className="text-4xl font-extrabold text-gray-800  font-playfair italic mb-6 text-center md:text-left">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800  font-playfair italic mb-6 text-center md:text-left">
                         Our <span className="text-logocolor">Admin Portal</span>
                     </h2>
                     <div className="flex flex-col md:flex-row items-center">
@@ -82,7 +82,7 @@ const Portals = () => {
             {/* Vendor Portal Section */}
             <section className="bg-white p-6 mb-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:px-20">
                 <div className='md:w-1/2'>
-                    <h2 className="text-4xl font-extrabold text-gray-800  font-playfair italic text-center md:text-left mb-6">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800  font-playfair italic text-center md:text-left mb-6">
                         Our <span className="text-logocolor">Vendor Portal</span>
                     </h2>
                     <div className="flex flex-col md:flex-row items-center">
