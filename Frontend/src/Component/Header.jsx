@@ -7,8 +7,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import navlogo from '../assets/footerlogo.gif';
 import AOS from "aos";
 import "aos/dist/aos.css";  // Don't forget to import AOS styles
-
+import { Link, useNavigate } from "react-router-dom";
+import { FaInstagram, FaYoutube, FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { HashLink } from "react-router-hash-link";
 const Header = () => {
+    const navigate = useNavigate()
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -43,7 +46,7 @@ const Header = () => {
     return (
         <header
             className={`w-full index-60 sticky bg-white top-0 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}
-             // Adding fade-down animation to the header
+        // Adding fade-down animation to the header
         >
             {
                 !isScrolled ? (
@@ -59,62 +62,81 @@ const Header = () => {
             {/* Scroll Progress Bar */}
             <div className="flex justify-between items-center px-2 py-2 max-w-full md:max-w-7xl mx-auto rounded-b-3xl">
                 {/* Logo */}
-                <img src={navlogo} alt="Logo" className="w-36 index-60" data-aos="fade-right" /> {/* Add animation */}
+                <img src={navlogo} alt="Logo" className="w-36 index-60 cursor-pointer" data-aos="fade-right" onClick={() => navigate('/')} /> {/* Add animation */}
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6">
                     <div className="group relative index-60" data-aos="fade-down">
-                        <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium">
-                            Point of Sale <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
-                        </button>
-                        {/* Dropdown */}
-                        <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                Option 1
-                            </a>
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                Option 2
-                            </a>
-                        </div>
+                        <HashLink to={'/#whyprontoo'} className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium">
+                            Feature
+                        </HashLink>
                     </div>
                     <div className="group relative index-60" data-aos="fade-down" data-aos-delay="200">
-                        <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium index-60">
-                            Add-Ons <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
-                        </button>
-                        {/* Dropdown */}
-                        <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                Option 1
-                            </a>
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                Option 2
-                            </a>
-                        </div>
+                        <Link to={'/ecosystem'} className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium index-60">
+                            Products
+                        </Link>
+                    </div>
+                    <div className="group relative index-60" data-aos="fade-down" data-aos-delay="300">
+                        <Link to={'/restauranttype'} className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium index-60">
+                            Restaurant Type
+                        </Link>
+                    </div>
+                    <div className="group relative index-60" data-aos="fade-down" data-aos-delay="500">
+                        <Link to={'/pricing'} className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium index-60">
+                            Pricing
+                        </Link>
                     </div>
                     <div className="group relative index-60" data-aos="fade-down" data-aos-delay="400">
                         <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium">
-                            Outlet Types <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
+                            Recources
+                            <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
                         </button>
-                        {/* Dropdown */}
-                        <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                Option 1
-                            </a>
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                                Option 2
-                            </a>
-                        </div>
+                        <ul className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <li className="hover:bg-gray-100 rounded-lg p-2 cursor-pointer duration-200 flex items-center gap-2">
+                                <div className="bg-gray-200 items-center justify-center flex h-10 w-10 rounded-lg">
+                                    <FaInstagram />
+                                </div>
+                                <div>
+                                    <h1>Instagram</h1>
+                                    <p className="text-sm text-gray-400">Follow Us on Instagram</p>
+                                </div>
+                            </li>
+                            <li className="hover:bg-gray-100 rounded-lg p-2 cursor-pointer duration-200 flex items-center gap-2">
+                                <div className="bg-gray-200 items-center justify-center flex h-10 w-10 rounded-lg">
+                                    <FaXTwitter />
+                                </div>
+                                <div>
+                                    <h1>Twitter</h1>
+                                    <p className="text-sm text-gray-400">Follow Us on Twitter</p>
+                                </div>
+                            </li>
+                            <li className="hover:bg-gray-100 rounded-lg p-2 cursor-pointer duration-200 flex items-center gap-2">
+                                <div className="bg-gray-200 items-center justify-center flex h-10 w-10 rounded-lg">
+                                    <FaFacebook />
+                                </div>
+                                <div>
+                                    <h1>FaceBook</h1>
+                                    <p className="text-sm text-gray-400">Follow Us on FaceBook</p>
+                                </div>
+                            </li>
+                            <li className="hover:bg-gray-100 rounded-lg p-2 cursor-pointer duration-200 flex items-center gap-2">
+                                <div className="bg-gray-200 items-center justify-center flex h-10 w-10 rounded-lg">
+                                    <FaYoutube />
+                                </div>
+                                <div>
+                                    <h1>Youtube</h1>
+                                    <p className="text-sm text-gray-400">Follow Us on Youtube</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="#" className="text-gray-800 hover:text-logocolor font-medium index-60" data-aos="fade-down" data-aos-delay="600">
-                        Pricing
-                    </a>
                 </nav>
 
                 {/* Right-side Buttons */}
                 <div className="hidden md:flex items-center space-x-4 index-60" data-aos="zoom-in" data-aos-delay="800">
-                    <button className="px-4 py-2 rounded-2xl hover:bg-logocolor-600 duration-300 font-bold text-gray-800 bg-logocolor flex justify-center items-center gap-1 hover:scale-105">
+                    <HashLink className="px-4 py-2 rounded-2xl hover:bg-logocolor-600 duration-300 font-bold text-gray-800 bg-logocolor flex justify-center items-center gap-1 hover:scale-105" to={'/#contact'}>
                         <HiSpeakerphone size={16} className="translate-y-[1px]" /> Book A Demo
-                    </button>
+                    </HashLink>
                 </div>
 
                 {/* Mobile Menu Icon */}
@@ -129,20 +151,17 @@ const Header = () => {
                     <div className="absolute top-16 left-0 w-full bg-white md:hidden">
                         <nav className="flex flex-col space-y-4 px-6 py-4">
                             <a href="#" className="text-gray-800 hover:text-logocolor">
-                                Point of Sale
+                                Feature
                             </a>
-                            <a href="#" className="text-gray-800 hover:text-logocolor">
-                                Add-Ons
-                            </a>
-                            <a href="#" className="text-gray-800 hover:text-logocolor">
-                                Outlet Types
-                            </a>
-                            <a href="#" className="text-gray-800 hover:text-logocolor">
+                            <Link to={'/ecosystem'} className="text-gray-800 hover:text-logocolor">
+                                Products
+                            </Link>
+                            <Link to={'/restauranttype'} className="text-gray-800 hover:text-logocolor">
+                                Restaurant Type
+                            </Link>
+                            <Link to={'/pricing'} className="text-gray-800 hover:text-logocolor">
                                 Pricing
-                            </a>
-                            <a href="#" className="text-gray-800 hover:text-logocolor">
-                                Sign In
-                            </a>
+                            </Link>
                             <button className="px-4 py-2 text-white font-semibold rounded-md bg-logocolor">
                                 Book A Demo
                             </button>
@@ -152,7 +171,7 @@ const Header = () => {
             </div>
 
             <motion.div
-                className="h-1 bg-logocolor origin-0"
+                className="h-1 bg-logocolor origin-0 rounded-full"
                 style={{ scaleX }} // scaleX will animate from 0 to 1 based on scroll progress
             />
         </header>

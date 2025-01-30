@@ -44,12 +44,12 @@ const LaptopView = () => {
       <section className="pt-14 md:pt-18 bg-gray-50 overflow-hidden">
         {/* Background Elements */}
         <div className="relative w-full max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="w-full max-w-4xl mx-auto sm:px-12 mb-10 lg:mb-20">
+          <div className="w-full max-w-4xl mx-auto sm:px-12 mb-10 lg:mb-10">
             <h1
               className="text-4xl sm:text-6xl font-playfair capitalize font-bold italic leading-[50px] sm:leading-[70px] mb-6 text-center"
               data-aos="fade-up" // AOS fade-up animation
             >
-              Fast & <span className="text-logocolor capitalize">Easy-in-house</span> Food <span className="text-logocolor capitalize">ordering</span>
+              Your Simple Easy-in-house Food <span className="text-logocolor capitalize">ordering</span>
             </h1>
 
             <div

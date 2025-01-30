@@ -9,3 +9,13 @@
 .index-60{
     z-index: 100;
 }
+
+
+.invert-color{
+    filter: invert(100%);
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: 30px;
+}

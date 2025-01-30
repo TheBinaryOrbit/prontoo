@@ -44,7 +44,7 @@ const Feature = () => {
           className="flex-1 flex flex-col justify-center items-start p-4 md:ml-10 z-50"
           data-aos="fade-right"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-playfair tracking-[2px] font-bold text-white text-left mb-5 mt-0 md:mt-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-Barlow  tracking-[2px] font-bold text-white text-left mb-5 mt-0 md:mt-8">
             Download <br /> our Mobile App
           </h2>
           <div className="mt-3 flex -space-x-2">
@@ -57,10 +57,10 @@ const Feature = () => {
             ].map((src, index) => (
               <img
                 key={index}
-                className="inline-block h-10 w-10 sm:h-12 sm:w-12 rounded-full ring-2 ring-white hover:scale-110 cursor-pointer duration-300"
+                className="inline-block h-10 w-10 sm:h-12 sm:w-12 rounded-full ring-2 ring-white  cursor-pointer hover:scale-105 duration-300 "
                 src={src}
                 alt={`User ${index + 1}`}
-                data-aos="zoom-in" // Animation on scroll
+                // data-aos="zoom-in" // Animation on scroll
               />
             ))}
           </div>

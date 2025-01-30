@@ -26,10 +26,10 @@ const Trusted = () => {
     <section className="py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
-          <h4 className="text-4xl font-extrabold font-playfair italic text-gray-800">
-            Trusted <span className="text-logocolor">Restaurants</span>
+          <h4 className="text-4xl font-extrabold font-Barlow tracking-wider text-gray-800">
+           Our Trusted <span className="text-logocolor">Patners</span>
           </h4>
-          <p className="mt-4 text-lg text-gray-600 md:mx-28 italic">
+          <p className="mt-4 text-lg text-gray-600 md:mx-28 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quas.
           </p>
         </div>

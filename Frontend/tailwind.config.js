@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+
+
 export default {
   content: [
     "./index.html",
@@ -14,7 +20,9 @@ export default {
       },
       fontFamily : {
         "playfair" : "Playfair Display",
-        "roboto" : "Roboto"
+        "roboto" : "Roboto",
+        "Poppins" : "Poppins",
+        "Barlow"  : "Barlow"
       },
       boxShadow : {
         'play': 'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
@@ -28,5 +36,20 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    addVariablesForColors
+  ],
+}
+
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
 }

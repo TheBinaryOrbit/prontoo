@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import logo from '../assets/footerlogo.gif';
+import logo from '../assets/navlogo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -14,7 +14,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="w-full bg-logocolor mt-28">
+    <footer className="w-full bg-gradient-to-b from-[#fb5607b3] to-[#fb5607] mt-28">
       <div className="w-full max-w-7xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8 px-4 sm:px-6 lg:px-8">
           <div
@@ -128,7 +128,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full py-7 border-t border-gray-200 bg-logocolor px-4 sm:px-6 lg:px-8">
+        <div className="w-full py-7 border-t border-gray-200 px-4 sm:px-6 lg:px-8">
           <div
             className="flex items-center justify-center flex-col lg:justify-between lg:flex-row"
           >
