@@ -2,10 +2,6 @@ import React from 'react'
 import { IoFastFoodOutline } from "react-icons/io5";
 import { FaChevronRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
-
-import img1 from '../assets/who.png';
-import img2 from '../assets/key.png';
 import { useNavigate } from 'react-router-dom';
 
 const Restaurant = () => {

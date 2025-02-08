@@ -1,5 +1,4 @@
 import React from 'react'
-import Contact from '../Component/Contact'
 import img from '../assets/contact.png';
 
 const Pricing = () => {
@@ -24,57 +23,57 @@ const Pricing = () => {
                         <ul class="mb-12 space-y-6 text-left text-lg text-gray-500">
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>2 auto tracking</span>
                             </li>
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>7 Day transaction clearing </span>
                             </li>
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>24/7 Customer support</span>
                             </li>
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>No widget access</span>
                             </li>
                         </ul>
-                        <a href="javascript:;" class="py-2.5 px-5 bg-orange-600 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto hover:bg-orange-700">Purchase Plan</a>
+                        <a href="javascript:;" class="py-2.5 px-5 bg-logocolor shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto hover:bg-logocolor">Purchase Plan</a>
                     </div>
 
                     <div class="flex flex-col mx-auto max-w-sm text-gray-900 rounded-2xl bg-orange-50 transition-all duration-500 hover:bg-orange-100 ">
-                        <div class="uppercase bg-gradient-to-r from-orange-600 to-[#fff] rounded-t-2xl p-3 text-center text-white">
+                        <div class="uppercase bg-gradient-to-r from-logocolor to-[#fff] rounded-t-2xl p-3 text-center text-white">
                             MOST POPULAR
                         </div>
                         <div class="p-6 xl:py-9 xl:px-12">
                             <h3 class="font-manrope text-2xl font-bold mb-3">Advanced</h3>
                             <div class="flex items-center mb-6">
-                                <span class="font-manrope mr-2 text-6xl font-semibold text-orange-600">₹149</span>
+                                <span class="font-manrope mr-2 text-6xl font-semibold text-logocolor">₹149</span>
                                 <span class="text-xl text-gray-500 ">/month</span>
                             </div>
 
                             <ul class="mb-12 space-y-6 text-left text-lg ">
                                 <li class="flex items-center space-x-4">
-                                    <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <span>AI Support</span>
                                 </li>
                                 <li class="flex items-center space-x-4">
 
-                                    <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <span>High priority queue</span>
@@ -88,20 +87,20 @@ const Pricing = () => {
                                 </li>
                                 <li class="flex items-center space-x-4">
 
-                                    <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <span>Priority customer support</span>
                                 </li>
                                 <li class="flex items-center space-x-4">
 
-                                    <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <span>Limited Widget Access</span>
                                 </li>
                             </ul>
-                            <a href="javascript:;" class="py-2.5 px-5 bg-orange-600 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit block mx-auto hover:bg-orange-700">Purchase Plan</a>
+                            <a href="javascript:;" class="py-2.5 px-5 bg-logocolor shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit block mx-auto hover:bg-logocolor">Purchase Plan</a>
 
                         </div>
                     </div>
@@ -116,41 +115,41 @@ const Pricing = () => {
                         <ul class="mb-12 space-y-6 text-left text-lg text-gray-500">
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>AI Advisor</span>
                             </li>
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>Instant Notifications </span>
                             </li>
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>Immediate transaction clearing </span>
                             </li>
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>Priority customer support</span>
                             </li>
                             <li class="flex items-center space-x-4">
 
-                                <svg class="flex-shrink-0 w-6 h-6 text-orange-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="flex-shrink-0 w-6 h-6 text-logocolor" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <span>All Widget Access</span>
                             </li>
                         </ul>
-                        <a href="javascript:;" class="py-2.5 px-5 bg-orange-600 shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto hover:bg-orange-700">Purchase Plan</a>
+                        <a href="javascript:;" class="py-2.5 px-5 bg-logocolor shadow-sm rounded-full transition-all duration-500 text-base text-white font-semibold text-center w-fit mx-auto hover:bg-logocolor">Purchase Plan</a>
 
                     </div>
                 </div>

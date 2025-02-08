@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 import { FaCaretDown } from "react-icons/fa6";
 import { HiSpeakerphone } from "react-icons/hi";
 import { motion, useScroll, useTransform } from "framer-motion";
-import navlogo from '../assets/footerlogo.gif';
+import navlogo from '../assets/nav.png';
 import AOS from "aos";
 import "aos/dist/aos.css";  // Don't forget to import AOS styles
 import { Link, useNavigate } from "react-router-dom";

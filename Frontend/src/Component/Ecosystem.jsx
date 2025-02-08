@@ -16,18 +16,18 @@ const Ecosystem = () => {
             </div>
             <div className='max-w-7xl mx-auto flex md:flex-row flex-col-reverse justify-between items-center h-[40rem] '>
                 <div className='md:w-1/2 p-5'>
-                    <h2 className="md:text-3xl  text-2xl font-bold text-black  capitalize  text-left mb-1 md:mb-6 font-Barlow tracking-wider">
+                    <h2 className="md:text-3xl  text-2xl font-bold text-black  capitalize  text-left mb-1 md:mb-6 font-Barlow tracking-wider" data-aos="fade-up">
                         Prontoo Eco-System<span className="text-logocolor "> Provides You</span>
                     </h2>
-                    <p className='text-justify text-lg sm:text-md text-gray-500 mb-6'>The all-in-one Restaurant Management System for all types of restaurant formats and food outlets . Your SimpleEasy-in-house Food ordering</p>
+                    <p className='text-justify text-lg sm:text-md text-gray-500 mb-6' data-aos="fade-up">The all-in-one Restaurant Management System for all types of restaurant formats and food outlets . Your SimpleEasy-in-house Food ordering</p>
                     <div className='flex flex-col mb-12 justify-start items-start  cursor-pointer'>
-                        <div className='pr-5 py-2 border-b-2 border-orange-600'>
+                        <div className='pr-5 py-2 border-b-2 border-orange-600' data-aos="fade-up">
                             <h1 className='text-xl font-bold font-roboto tracking-wider hover:scale-105 duration-300'>1. Customer Application</h1>
                         </div>  
-                        <div className='pr-5 py-2 border-b-2 border-orange-600 cursor-pointer'>
+                        <div className='pr-5 py-2 border-b-2 border-orange-600 cursor-pointer' data-aos="fade-up" data-aos-delay="200">
                             <h1 className='text-xl font-bold font-roboto tracking-wider hover:scale-105 duration-300'>2. Admin Portal</h1>
                         </div>
-                        <div className='pr-5 py-2 border-b-2 border-orange-600 cursor-pointer'>
+                        <div className='pr-5 py-2 border-b-2 border-orange-600 cursor-pointer' data-aos="fade-up" data-aos-delay="400">
                             <h1 className='text-xl font-bold font-roboto tracking-wider hover:scale-105 duration-300'>3. Vendor Portal</h1>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const Ecosystem = () => {
                     </button>
                 </div>
                 <div className='md:w-1/2 h-[20rem] md:h-[30rem] p-5'>
-                        <canvas className='w-full h-full bg-slate-300 rounded-2xl'></canvas>
+                        <canvas className='w-full h-full bg-slate-300 rounded-2xl' data-aos="fade-up"></canvas>
                 </div>
             </div>
         </section>

@@ -95,24 +95,25 @@ const Portals = () => {
                 {
                     content.map((item, index) => (
                         <div key={index} className={`w-full h-fit flex  flex-col-reverse justify-between items-center  md:gap-20 mb-10 ${index % 2 == 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                            <div className='md:w-1/2 p-5 top-[10vh] left-0'>
-                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4">
-                                    {item.title1}<span className="text-logocolor "> {item.title2}</span>
+                            <div className='md:w-[40%] p-5 top-[10vh] left-0'>
+                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4" data-aos="fade-up">
+                                    {item.title1}<span className="text-logocolor " > {item.title2}</span>
                                 </h2>
-                                <p className='text-justify text-lg sm:text-md text-gray-500 mb-6'>{item.description}</p>
+                                <p className='text-justify text-lg sm:text-md text-gray-500 mb-6' data-aos="fade-up">{item.description}</p>
                                 {
-                                    item.progressbas.map((progress , i) => (
-                                        <div key={i} className='mb-6'>
-                                            <p className="font-bold text-gray-700 mb-2 ">{progress.title}</p>
-                                            <div className="w-full bg-gray-200 rounded-full h-4">
-                                                <div className="bg-logocolor h-4 rounded-full" style={{ width: `${progress.perc}%` }}></div>
+                                    item.progressbas.map((progress, i) => (
+                                        <li key={i} className="flex items-start gap-3" data-aos="fade-up">
+                                            <div>
+                                                <p className="text-sm sm:text-base lg:text-lg font-medium text-gray-800 mb-3">
+                                                    {i+1}. {progress.title}
+                                                </p>
                                             </div>
-                                        </div>
+                                        </li>
                                     ))
                                 }
                             </div>
-                            <div className='md:w-1/2 h-[20rem] md:h-[30rem] p-5'>
-                                <canvas className='w-full h-full bg-slate-300 rounded-2xl'></canvas>
+                            <div className='md:w-[60%] h-[20rem] md:h-[30rem] p-5'>
+                                <canvas className='w-full h-full bg-slate-300 rounded-2xl' data-aos="fade-up"></canvas>
                             </div>
                         </div>
                     ))

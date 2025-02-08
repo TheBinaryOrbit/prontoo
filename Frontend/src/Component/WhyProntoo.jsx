@@ -26,7 +26,7 @@ function WhyProntoo() {
     useEffect(() => {
         // Initialize AOS
         AOS.init({
-            duration: 1000,  // Duration of the animation (in ms)
+            duration: 500,  // Duration of the animation (in ms)
             easing: 'ease-in-out',  // Easing function for the animation
             once: true,  // Whether the animation should happen only once
         });
@@ -48,13 +48,13 @@ function WhyProntoo() {
                     content.map((item , index) => (
                         <div key={index} className="w-full h-fit flex md:flex-row flex-col-reverse justify-between items-center  md:gap-20 relative mb-10">
                             <div className='md:w-1/2 p-5 md:sticky top-[10vh] left-0'>
-                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4">
+                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4" data-aos="fade-up">
                                     {item.title1}<span className="text-logocolor "> {item.title2}</span>
                                 </h2>
-                                <p className='text-justify text-lg sm:text-md text-gray-500'>{item.description}</p>
+                                <p className='text-justify text-lg sm:text-md text-gray-500' data-aos="fade-up">{item.description}</p>
                             </div>
                             <div className='md:w-1/2 h-[20rem] md:h-[30rem] p-5'>
-                                <canvas className='w-full h-full bg-slate-300 rounded-2xl'></canvas>
+                                <canvas className='w-full h-full bg-slate-300 rounded-2xl'  data-aos="fade-up"></canvas>
                             </div>
                         </div>
                     ))

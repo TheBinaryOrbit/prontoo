@@ -14,7 +14,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="w-full bg-gradient-to-b from-[#fb5607b3] to-[#fb5607] mt-28">
+    <footer className="w-full bg-logocolor mt-28">
       <div className="w-full max-w-7xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8 px-4 sm:px-6 lg:px-8">
           <div

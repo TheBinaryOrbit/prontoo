@@ -120,10 +120,10 @@ const RestaurantType = () => {
           restaurantTypes.map((item, index) => (
             <div key={index} className={`w-full h-fit flex  flex-col-reverse justify-between items-center  md:gap-20 mb-10 ${index % 2 == 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
               <div className='md:w-[40%] p-5 top-[10vh] left-0'>
-                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4">
+                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4" data-aos="fade-up">
                   {item.title1}<span className="text-logocolor "> {item.title2}</span>
                 </h2>
-                <p className='text-justify text-lg sm:text-md text-gray-500 mb-6'>{item.description}</p>
+                <p className='text-justify text-lg sm:text-md text-gray-500 mb-6' data-aos="fade-up">{item.description}</p>
                 <ul>
                   {
                     item.keyPoints.map((keys, i) => (
@@ -139,7 +139,7 @@ const RestaurantType = () => {
                 </ul>
               </div>
               <div className='md:w-[60%] h-[20rem] md:h-[30rem] p-5'>
-                <canvas className='w-full h-full bg-slate-300 rounded-2xl'></canvas>
+                <canvas className='w-full h-full bg-slate-300 rounded-2xl' data-aos="fade-up"></canvas>
               </div>
             </div>
           ))

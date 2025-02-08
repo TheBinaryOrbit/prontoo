@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import img1 from '../assets/who.png';
-import img2 from '../assets/key.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
