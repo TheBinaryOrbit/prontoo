@@ -36,10 +36,10 @@ function WhyProntoo() {
         <section className="py-10">
             <div className="mb-12 text-center flex justify-center flex-col items-center">
                 <img src={img} alt="" className="w-20 sm:w-28 lg:w-24" data-aos="fade-up" id='whyprontoo' />
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-bold text-gray-900 py-5 font-Barlow tracking-wider" data-aos="fade-up">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-bold text-gray-900 py-5 tracking-wider font-lora" data-aos="fade-up">
                     Why <span className="text-logocolor">Prontoo</span>
                 </h2>
-                <p className="text-lg sm:text-md font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto px-5" data-aos="fade-up" >
+                <p className="text-md sm:text-md font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto px-5 font-lora" data-aos="fade-up" >
                     Skip the lines: Order directly from your phone and pick up your meal when it’s ready - no more waiting.
                 </p>
             </div>
@@ -48,10 +48,10 @@ function WhyProntoo() {
                     content.map((item , index) => (
                         <div key={index} className="w-full h-fit flex md:flex-row flex-col-reverse justify-between items-center  md:gap-20 relative mb-10">
                             <div className='md:w-1/2 p-5 md:sticky top-[10vh] left-0'>
-                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4" data-aos="fade-up">
+                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-lora font-semibold text-left mb-2 md:mb-4" data-aos="fade-up">
                                     {item.title1}<span className="text-logocolor "> {item.title2}</span>
                                 </h2>
-                                <p className='text-justify text-lg sm:text-md text-gray-500' data-aos="fade-up">{item.description}</p>
+                                <p className='text-justify text-md leading-7 sm:text-lg text-gray-500 font-lora' data-aos="fade-up">{item.description}</p>
                             </div>
                             <div className='md:w-1/2 h-[20rem] md:h-[30rem] p-5'>
                                 <canvas className='w-full h-full bg-slate-300 rounded-2xl'  data-aos="fade-up"></canvas>

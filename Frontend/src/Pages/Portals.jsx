@@ -83,10 +83,10 @@ const Portals = () => {
     return (
         <div className="p-6 mt-10">
             <div className="mb-12  text-center flex justify-center flex-col items-center">
-                <h2 className="text-3xl sm:text-4xl lg:text-4xl text-center font-bold text-gray-900 py-5 font-Poppins tracking-wider" data-aos="fade-up">
+                <h2 className="text-3xl sm:text-4xl lg:text-4xl text-center font-bold text-gray-900 py-5  tracking-wider font-lora" data-aos="fade-up">
                     Prontoo<span className="text-logocolor"> Eco-System</span>
                 </h2>
-                <p className="sm:text-lg text-md font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto px-5" data-aos="fade-up">
+                <p className="sm:text-md text-md font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto px-5 font-lora" data-aos="fade-up">
                     Skip the lines: Order directly from your phone and pick up your meal when it’s ready - no more waiting.
                 </p>
             </div>
@@ -96,15 +96,15 @@ const Portals = () => {
                     content.map((item, index) => (
                         <div key={index} className={`w-full h-fit flex  flex-col-reverse justify-between items-center  md:gap-20 mb-10 ${index % 2 == 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                             <div className='md:w-[40%] p-5 top-[10vh] left-0'>
-                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-Poppins font-medium text-left mb-2 md:mb-4" data-aos="fade-up">
+                                <h2 className="text-3xl sm:text-3xl text-gray-800 font-lora font-semibold text-left mb-2 md:mb-4" data-aos="fade-up">
                                     {item.title1}<span className="text-logocolor " > {item.title2}</span>
                                 </h2>
-                                <p className='text-justify text-lg sm:text-md text-gray-500 mb-6' data-aos="fade-up">{item.description}</p>
+                                <p className='text-justify text-md sm:text-md text-gray-500 mb-6 font-lora' data-aos="fade-up">{item.description}</p>
                                 {
                                     item.progressbas.map((progress, i) => (
                                         <li key={i} className="flex items-start gap-3" data-aos="fade-up">
                                             <div>
-                                                <p className="text-sm sm:text-base lg:text-lg font-medium text-gray-800 mb-3">
+                                                <p className="text-sm sm:text-base lg:text-lg font-medium text-gray-800 mb-3 font-lora">
                                                     {i+1}. {progress.title}
                                                 </p>
                                             </div>

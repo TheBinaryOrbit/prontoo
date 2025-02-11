@@ -7,18 +7,22 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import navlogo from '../assets/nav.png';
 import AOS from "aos";
 import "aos/dist/aos.css";  // Don't forget to import AOS styles
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { FaInstagram, FaYoutube, FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { HashLink } from "react-router-hash-link";
 const Header = () => {
     const navigate = useNavigate()
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const path = useLocation()
+
+    const pathName = path.pathname == "/";
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
@@ -45,11 +49,11 @@ const Header = () => {
 
     return (
         <header
-            className={`w-full index-60 sticky bg-white top-0 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}
+            className={`w-full index-60 sticky  top-0 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}
         // Adding fade-down animation to the header
         >
             {
-                !isScrolled ? (
+                pathName && !isScrolled && !isMenuOpen  ? (
                     <div className="absolute inset-0">
                         <div className="bg-gradient-to-r from-blue-50 via-white to-pink-50 w-full h-full opacity-75"></div>
                         <div className="absolute top-10 left-10 bg-blue-200 rounded-full blur-3xl opacity-50"></div>
@@ -81,17 +85,18 @@ const Header = () => {
                             Restaurant Type
                         </Link>
                     </div>
-                    <div className="group relative index-60" data-aos="fade-down" data-aos-delay="500">
+                    {/* <div className="group relative index-60" data-aos="fade-down" data-aos-delay="500">
                         <Link to={'/pricing'} className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium index-60">
                             Pricing
                         </Link>
-                    </div>
-                    <div className="group relative index-60" data-aos="fade-down" data-aos-delay="400">
+                    </div> */}
+                    <div className="relative group" data-aos="fade-down" data-aos-delay="400">
                         <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium">
-                            Recources
+                            Resources
                             <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
                         </button>
-                        <ul className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                        {/* Dropdown Menu */}
+                        <ul className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
                             <li className="hover:bg-gray-100 rounded-lg p-2 cursor-pointer duration-200 flex items-center gap-2">
                                 <div className="bg-gray-200 items-center justify-center flex h-10 w-10 rounded-lg">
                                     <FaInstagram />
@@ -130,6 +135,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
+
                 </nav>
 
                 {/* Right-side Buttons */}
@@ -148,32 +154,36 @@ const Header = () => {
 
                 {/* Mobile Menu */}
                 {isMenuOpen && (
-                    <div className="absolute top-16 left-0 w-full bg-white md:hidden">
+                    <div className="absolute top-14 left-0 w-full bg-white md:hidden">
                         <nav className="flex flex-col space-y-4 px-6 py-4">
-                            <a href="#" className="text-gray-800 hover:text-logocolor">
+                            <a href="#" className="text-gray-800 hover:text-logocolor" onClick={toggleMenu}>
                                 Feature
                             </a>
-                            <Link to={'/ecosystem'} className="text-gray-800 hover:text-logocolor">
+                            <Link to={'/ecosystem'} className="text-gray-800 hover:text-logocolor" onClick={toggleMenu}>
                                 Products
                             </Link>
-                            <Link to={'/restauranttype'} className="text-gray-800 hover:text-logocolor">
+                            <Link to={'/restauranttype'} className="text-gray-800 hover:text-logocolor" onClick={toggleMenu}>
                                 Restaurant Type
                             </Link>
-                            <Link to={'/pricing'} className="text-gray-800 hover:text-logocolor">
+                            {/* <Link to={'/pricing'} className="text-gray-800 hover:text-logocolor">
                                 Pricing
-                            </Link>
-                            <button className="px-4 py-2 text-white font-semibold rounded-md bg-logocolor">
+                            </Link> */}
+                            <HashLink className="px-4 py-2 text-white text-center font-semibold rounded-md bg-logocolor" to={'/#contact'} onClick={toggleMenu}>
                                 Book A Demo
-                            </button>
+                            </HashLink>
                         </nav>
                     </div>
                 )}
             </div>
-
-            <motion.div
-                className="h-1 bg-logocolor origin-0 rounded-full"
-                style={{ scaleX }} // scaleX will animate from 0 to 1 based on scroll progress
-            />
+            {
+                !isMenuOpen ?
+                    <motion.div
+                        className="h-1 bg-logocolor origin-0 rounded-full"
+                        style={{ scaleX }} // scaleX will animate from 0 to 1 based on scroll progress
+                    />
+                    :
+                    ""
+            }
         </header>
     );
 };

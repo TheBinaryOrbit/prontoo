@@ -44,7 +44,7 @@ const Feature = () => {
           className="flex-1 flex flex-col justify-center items-start p-4 md:ml-10 z-50"
           data-aos="fade-right"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-Barlow  tracking-[2px] font-bold text-white text-left mb-5 mt-0 md:mt-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-lora  tracking-[2px] font-bold text-white text-left mb-5 mt-0 md:mt-8">
             Download <br /> our Mobile App
           </h2>
           <div className="mt-3 flex -space-x-2">

@@ -53,11 +53,6 @@ const Footer = () => {
             <h4 className="text-lg text-white font-medium mb-7">Products</h4>
             <ul className="text-sm transition-all duration-500">
               <li className="mb-6">
-                <a href="javascript:;" className="text-gray-50 font-medium hover:text-gray-100">
-                  Figma UI System
-                </a>
-              </li>
-              <li className="mb-6">
                 <a href="javascript:;" className=" text-gray-50 font-medium hover:text-gray-100">
                   Icons Assets
                 </a>
