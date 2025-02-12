@@ -2,24 +2,28 @@ import React, { useEffect } from 'react';
 import img from '../assets/CookingChef.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { title } from 'framer-motion/client';
-
+import payment from '../assets/payment.avif'
+import payroll from '../assets/payroll.avif'
+import superadmin from '../assets/superadmin.jpg'
 
 const content = [
     {
         title1: "Super Admin",
         title2: "POS",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente consectetur ullam illo voluptas totam consequuntur vel fugiat impedit rerum modi possimus voluptatibus alias mollitia assumenda excepturi, ut quos molestias cupiditate eum eligendi nobis."
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente consectetur ullam illo voluptas totam consequuntur vel fugiat impedit rerum modi possimus voluptatibus alias mollitia assumenda excepturi, ut quos molestias cupiditate eum eligendi nobis.",
+        img : superadmin
     },
     {
         title1: "Payroll",
         title2: "Management",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente consectetur ullam illo voluptas totam consequuntur vel fugiat impedit rerum modi possimus voluptatibus alias mollitia assumenda excepturi, ut quos molestias cupiditate eum eligendi nobis."
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente consectetur ullam illo voluptas totam consequuntur vel fugiat impedit rerum modi possimus voluptatibus alias mollitia assumenda excepturi, ut quos molestias cupiditate eum eligendi nobis.",
+        img : payroll
     },
     {
         title1: "Pay once a",
         title2: "year",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente consectetur ullam illo voluptas totam consequuntur vel fugiat impedit rerum modi possimus voluptatibus alias mollitia assumenda excepturi, ut quos molestias cupiditate eum eligendi nobis."
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente consectetur ullam illo voluptas totam consequuntur vel fugiat impedit rerum modi possimus voluptatibus alias mollitia assumenda excepturi, ut quos molestias cupiditate eum eligendi nobis.",
+        img : payment
     }
 ]
 function WhyProntoo() {
@@ -53,8 +57,10 @@ function WhyProntoo() {
                                 </h2>
                                 <p className='text-justify text-md leading-7 sm:text-lg text-gray-500 font-lora' data-aos="fade-up">{item.description}</p>
                             </div>
-                            <div className='md:w-1/2 h-[20rem] md:h-[30rem] p-5'>
-                                <canvas className='w-full h-full bg-slate-300 rounded-2xl'  data-aos="fade-up"></canvas>
+                            <div className='md:w-1/2 h-fit p-5'>
+                                <div className='w-full h-full bg--300 rounded-2xl overflow-hidden'  data-aos="fade-up">
+                                    <img src={item?.img} alt="" className=' scale-90' />
+                                </div>
                             </div>
                         </div>
                     ))

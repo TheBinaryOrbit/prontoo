@@ -13,10 +13,10 @@ export default {
   theme: {
     extend: {
       colors : {
-        'logocolor'  : '#fe4d38'
+        'logocolor'  : '#fe4c38d6'
       },
       backgroundColor : {
-        "logocolor"  : "#fe4d38"
+        "logocolor"  : "#fe4c38d6"
       },
       fontFamily : {
         "playfair" : "Playfair Display",
@@ -34,7 +34,10 @@ export default {
       },
       rotate : {
         "360" : "360deg"
-      }
+      },
+      backgroundImage: {
+        'back': "url(/src/assets/background.jpeg)"
+      },
     },
   },
   plugins: [

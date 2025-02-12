@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/contact.png';
+import img from '../assets/contact.jpg';
 
 const Pricing = () => {
     return (

@@ -90,13 +90,13 @@ const Header = () => {
                             Pricing
                         </Link>
                     </div> */}
-                    <div className="relative group" data-aos="fade-down" data-aos-delay="400">
+                    <div className="relative group z-50" data-aos="fade-down" data-aos-delay="400">
                         <button className="text-gray-800 hover:text-logocolor focus:outline-none flex justify-center items-center gap-1 font-medium">
                             Resources
                             <FaCaretDown size={12} className="translate-y-[1px] group-hover:rotate-180 duration-300" />
                         </button>
                         {/* Dropdown Menu */}
-                        <ul className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
+                        <ul className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-50">
                             <li className="hover:bg-gray-100 rounded-lg p-2 cursor-pointer duration-200 flex items-center gap-2">
                                 <div className="bg-gray-200 items-center justify-center flex h-10 w-10 rounded-lg">
                                     <FaInstagram />
@@ -178,7 +178,7 @@ const Header = () => {
             {
                 !isMenuOpen ?
                     <motion.div
-                        className="h-1 bg-logocolor origin-0 rounded-full"
+                        className="h-1 bg-logocolor origin-0 rounded-full z-20"
                         style={{ scaleX }} // scaleX will animate from 0 to 1 based on scroll progress
                     />
                     :

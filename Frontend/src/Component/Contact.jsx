@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import img from '../assets/contact.png';
+import img from '../assets/contact.jpg';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,7 +14,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between p-6 lg:p-16 max-w-7xl mx-auto" id="contact">
+    <div className="flex flex-col lg:flex-row gap-10 items-center justify-between p-6 lg:p-16 max-w-7xl mx-auto" id="contact">
       {/* Left Section: Form */}
       <div className="w-full lg:w-1/2" data-aos="fade-right">
         <h3 className="text-4xl font-bold mb-2 font-lora tracking-wider md:text-left text-center">
@@ -93,7 +93,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="w-full py-3 bg-logocolor text-white rounded-xl hover:bg-red-600 focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 font-bold font-lora"
+            className="w-full py-3 bg-logocolor text-white rounded-xl hover:bg-[#fe4c38ed] duration-300 focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 font-bold font-lora"
           >
             Submit
           </button>
