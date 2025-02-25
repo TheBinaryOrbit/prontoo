@@ -17,7 +17,7 @@ const Contact = () => {
     <div className="flex flex-col lg:flex-row gap-10 items-center justify-between p-6 lg:p-16 max-w-7xl mx-auto" id="contact">
       {/* Left Section: Form */}
       <div className="w-full lg:w-1/2" data-aos="fade-right">
-        <h3 className="text-4xl font-bold mb-2 font-lora tracking-wider md:text-left text-center">
+        <h3 className=" text-3xl sm:text-4xl font-bold mb-2 font-lora tracking-wider md:text-left text-center">
           Book a free Demo
         </h3>
         <p className="text-gray-600 mb-6 md:text-left font-lora text-center">

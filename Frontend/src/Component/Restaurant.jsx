@@ -36,34 +36,34 @@ const Restaurant = () => {
                   Built for all types of <span className="text-logocolor">food business</span>
                 </h2>
                 <p className='text-justify text-lg sm:text-md text-gray-500 mb-6 font-lora'>The all-in-one Restaurant Management System for all types of restaurant formats and food outlets . Your SimpleEasy-in-house Food ordering</p>
-                <div className="grid grid-cols-3 gap-5 mb-6">
-                  <div className="rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
+                <div className="grid grid-cols-3 gap-2 sm:gap-5 mb-6">
+                  <div className="rounded-xl sm:rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
                     <img src={r1} alt="Noodles" className="w-3/4 h-auto object-cover duration-200" />
-                    <h4 className="font-bold text-lg text-[#6d432d] text-nowrap">Seafood</h4>
+                    <h4 className="font-bold text-xs sm:text-lg text-[#6d432d] text-nowrap">Seafood</h4>
                   </div>
 
-                  <div className="rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
+                  <div className="rounded-xl sm:rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
                     <img src={r2} alt="Soup" className="w-3/4 h-auto object-cover duration-200" />
-                    <h4 className="font-bold text-lg text-[#6d432d] text-nowrap">Fast Food</h4>
+                    <h4 className="font-bold text-xs sm:text-lg text-[#6d432d] text-nowrap">Fast Food</h4>
                   </div>
 
-                  <div className="rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
+                  <div className="rounded-xl sm:rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
                     <img src={r3} alt="Burger" className="w-3/4 h-auto object-cover duration-200 scale-110 " />
-                    <h4 className="font-bold text-lg text-[#6d432d] text-nowrap">Fine Dining</h4>
+                    <h4 className="font-bold text-xs sm:text-lg text-[#6d432d] text-nowrap">Fine Dining</h4>
                   </div>
 
-                  <div className="rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
+                  <div className="rounded-xl sm:rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
                     <img src={r4} alt="Indian Food" className="w-3/4 h-auto object-cover duration-200" />
-                    <h4 className="font-bold text-lg text-[#6d432d] text-nowrap">Diner</h4>
+                    <h4 className="font-bold text-xs sm:text-lg text-[#6d432d] text-nowrap">Diner</h4>
                   </div>
-                  <div className="rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
+                  <div className="rounded-xl sm:rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
                     <img src={r5} alt="Noodles" className="w-3/4 h-auto object-cover duration-200" />
-                    <h4 className="font-bold text-lg text-[#6d432d] text-nowrap">Cloud Kitchen</h4>
+                    <h4 className="font-bold text-xs sm:text-lg text-[#6d432d] text-nowrap">Cloud Kitchen</h4>
                   </div>
 
-                  <div className="rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
+                  <div className="rounded-xl sm:rounded-2xl w-full h-full flex flex-col justify-center items-center p-4 group transition bg-white">
                     <img src={r6} alt="Soup" className="w-3/4 h-auto object-cover duration-200" />
-                    <h4 className="font-bold text-lg text-[#6d432d] text-nowrap">Buffet</h4>
+                    <h4 className="font-bold text-xs sm:text-lg text-[#6d432d] text-nowrap">Buffet</h4>
                   </div>
                 </div>
 

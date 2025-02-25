@@ -49,15 +49,11 @@ const Header = () => {
 
     return (
         <header
-            className={`w-full index-60 sticky  top-0 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}
-        // Adding fade-down animation to the header
-        >
+            className={`w-full index-60 sticky  top-0 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}>
             {
                 pathName && !isScrolled && !isMenuOpen  ? (
-                    <div className="absolute inset-0">
-                        <div className="bg-gradient-to-r from-blue-50 via-white to-pink-50 w-full h-full opacity-75"></div>
-                        <div className="absolute top-10 left-10 bg-blue-200 rounded-full blur-3xl opacity-50"></div>
-                        <div className="absolute bottom-10 right-10 w-60 h-60 bg-pink-200 rounded-full blur-3xl opacity-50"></div>
+                    <div className="absolute inset-0 w-full h-full bg-transparent">
+                        
                     </div>
                 )
                     :

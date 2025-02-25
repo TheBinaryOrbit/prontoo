@@ -38,7 +38,7 @@ function WhyProntoo() {
 
     return (
         <section className="py-10">
-            <div className="mb-12 text-center flex justify-center flex-col items-center">
+            <div className="md:mb-12 mb-5 text-center flex justify-center flex-col items-center">
                 <img src={img} alt="" className="w-20 sm:w-28 lg:w-24" data-aos="fade-up" id='whyprontoo' />
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-bold text-gray-900 py-5 tracking-wider font-lora" data-aos="fade-up">
                     Why <span className="text-logocolor">Prontoo</span>
@@ -51,7 +51,7 @@ function WhyProntoo() {
                 {
                     content.map((item , index) => (
                         <div key={index} className="w-full h-fit flex md:flex-row flex-col-reverse justify-between items-center  md:gap-20 relative mb-10">
-                            <div className='md:w-1/2 p-5 md:sticky top-[10vh] left-0'>
+                            <div className='md:w-1/2 p-2 sm:p-5 md:sticky top-[10vh] left-0'>
                                 <h2 className="text-3xl sm:text-3xl text-gray-800 font-lora font-semibold text-left mb-2 md:mb-4" data-aos="fade-up">
                                     {item.title1}<span className="text-logocolor "> {item.title2}</span>
                                 </h2>

@@ -6,10 +6,12 @@ import Contact from '../Component/Contact'
 import LaptopView from '../Component/LaptopView'
 import Restaurant from '../Component/Restaurant'
 import Ecosystem from '../Component/Ecosystem'
+import Hero from '../Component/Hero'
 
 const Home = () => {
   return (
     <>
+      {/* <Hero /> */}
       <LaptopView />
       <WhyProntoo />
       <Restaurant />

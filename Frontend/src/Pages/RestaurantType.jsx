@@ -116,7 +116,7 @@ const foodTypes = [
 
 const FoodType = () => {
   return (
-    <div className="p-6 mt-10">
+    <div className="p-2 sm:p-6 mt-10">
       <div className="mb-12 text-center flex justify-center flex-col items-center">
         <h2 className="text-3xl sm:text-4xl lg:text-4xl text-center capitalize font-bold text-gray-900 py-5 font-lora tracking-wider" data-aos="fade-up">
           Explore <span className="text-logocolor">Delicious Food Categories</span>
@@ -126,13 +126,13 @@ const FoodType = () => {
         </p>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         {foodTypes.map((item, index) => (
           <div
             key={index}
             className={`w-full h-fit flex flex-col-reverse justify-between items-center md:gap-20 mb-10 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
           >
-            <div className="md:w-[50%] p-5">
+            <div className="md:w-[50%] p-2 sm:p-5">
               <h2 className="text-3xl sm:text-3xl text-gray-800 font-lora font-semibold text-left mb-2 md:mb-4" data-aos="fade-up">
                 {item.title1} <span className="text-logocolor">{item.title2}</span>
               </h2>
@@ -149,7 +149,7 @@ const FoodType = () => {
                 ))}
               </ul>
             </div>
-            <div className="md:w-[50%] w-full h-[20rem] md:h-[30rem] p-5">
+            <div className="md:w-[50%] w-full h-[20rem] md:h-[30rem] p-2 sm:p-5">
               <img
                 src={item.image}
                 alt={`${item.title1} - ${item.title2}`}

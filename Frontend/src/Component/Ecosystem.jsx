@@ -7,7 +7,7 @@ const Ecosystem = () => {
     const navigate = useNavigate()
     return (
         <section className="py-20">
-            <div className="mb-12 md:mb-0 text-center flex justify-center flex-col items-center">
+            <div className="mb-0 md:mb-12 text-center flex justify-center flex-col items-center">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-bold text-gray-900 py-5 font-lora tracking-wider" data-aos="fade-up">
                     Prontoo<span className="text-logocolor"> Eco-System</span>
                 </h2>
